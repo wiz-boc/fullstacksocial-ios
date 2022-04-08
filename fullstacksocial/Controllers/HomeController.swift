@@ -74,7 +74,7 @@ class HomeController: LBTAListController<UserPostCell, Post>, UINavigationContro
             .init(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(handleSearch))
         ]
         
-        navigationItem.leftBarButtonItem = .init(title: "Log In", style: .plain, target: self, action: #selector(handleLogin))
+        navigationItem.leftBarButtonItem = .init(title: "", style: .plain, target: self, action: #selector(handleLogin))
         
         let rc = UIRefreshControl()
         rc.addTarget(self, action: #selector(fetchPosts), for: .valueChanged)

@@ -59,8 +59,8 @@ class CreatePostController: UIViewController, UITextViewDelegate {
     }
     
     @objc fileprivate func handlePost() {
-        let url = "http://localhost:1337/post"
-        
+        //let url = "http://localhost:1337/post"
+        let url = "\(Service.shared.baseUrl)/post"
         let hud = JGProgressHUD(style: .dark)
         hud.indicatorView = JGProgressHUDRingIndicatorView()
         hud.textLabel.text = "Uploading"
